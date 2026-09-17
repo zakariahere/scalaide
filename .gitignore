@@ -1,0 +1,14 @@
+.gradle/
+.intellijPlatform/
+**/build/
+**/target/
+.idea/
+*.iml
+local.properties
+.tools/
+.sandbox/
+*.hprof
+**/.bsp/
+**/.scala-build/
+examples/hello-scala/null/
+outputs/

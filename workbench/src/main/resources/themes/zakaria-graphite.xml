@@ -1,0 +1,50 @@
+<scheme name="Zakaria Graphite" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">idea</property>
+    <property name="originalScheme">Zakaria Graphite</property>
+  </metaInfo>
+  <colors>
+    <option name="CARET_COLOR" value="A8C7FF"/>
+    <option name="CARET_ROW_COLOR" value="121B29"/>
+    <option name="CONSOLE_BACKGROUND_KEY" value="0B1018"/>
+    <option name="GUTTER_BACKGROUND" value="0B1018"/>
+    <option name="LINE_NUMBERS_COLOR" value="7185A3"/>
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="A8C7FF"/>
+    <option name="INDENT_GUIDE" value="28354B"/>
+    <option name="SELECTED_INDENT_GUIDE" value="4B6080"/>
+    <option name="RIGHT_MARGIN_COLOR" value="28354B"/>
+    <option name="SELECTION_BACKGROUND" value="223C67"/>
+    <option name="SELECTION_FOREGROUND" value="F5F7FB"/>
+    <option name="GUTTER_ADDED_LINES" value="74DFB1"/>
+    <option name="GUTTER_MODIFIED_LINES" value="A8C7FF"/>
+    <option name="GUTTER_DELETED_LINES" value="FF95A5"/>
+    <option name="FILESTATUS_ADDED" value="74DFB1"/>
+    <option name="FILESTATUS_MODIFIED" value="A8C7FF"/>
+    <option name="FILESTATUS_DELETED" value="FF95A5"/>
+    <option name="FILESTATUS_UNKNOWN" value="F4C56A"/>
+  </colors>
+  <attributes>
+    <option name="TEXT"><value><option name="FOREGROUND" value="F5F7FB"/><option name="BACKGROUND" value="0B1018"/></value></option>
+    <option name="DEFAULT_KEYWORD"><value><option name="FOREGROUND" value="A8C7FF"/><option name="FONT_TYPE" value="1"/></value></option>
+    <option name="DEFAULT_STRING"><value><option name="FOREGROUND" value="74DFB1"/></value></option>
+    <option name="DEFAULT_NUMBER"><value><option name="FOREGROUND" value="F4C56A"/></value></option>
+    <option name="DEFAULT_CLASS_NAME"><value><option name="FOREGROUND" value="D6E4FF"/></value></option>
+    <option name="DEFAULT_INTERFACE_NAME"><value><option name="FOREGROUND" value="D6E4FF"/></value></option>
+    <option name="DEFAULT_FUNCTION_DECLARATION"><value><option name="FOREGROUND" value="8EDDE6"/></value></option>
+    <option name="DEFAULT_FUNCTION_CALL"><value><option name="FOREGROUND" value="8EDDE6"/></value></option>
+    <option name="DEFAULT_INSTANCE_METHOD"><value><option name="FOREGROUND" value="8EDDE6"/></value></option>
+    <option name="DEFAULT_PARAMETER"><value><option name="FOREGROUND" value="B3C0D4"/></value></option>
+    <option name="DEFAULT_LINE_COMMENT"><value><option name="FOREGROUND" value="93A4BF"/></value></option>
+    <option name="DEFAULT_BLOCK_COMMENT"><value><option name="FOREGROUND" value="93A4BF"/></value></option>
+    <option name="DEFAULT_DOC_COMMENT"><value><option name="FOREGROUND" value="93A4BF"/></value></option>
+    <option name="DEFAULT_METADATA"><value><option name="FOREGROUND" value="C5B5F4"/></value></option>
+    <option name="ERRORS_ATTRIBUTES"><value><option name="EFFECT_COLOR" value="FF95A5"/><option name="ERROR_STRIPE_COLOR" value="FF95A5"/><option name="EFFECT_TYPE" value="2"/></value></option>
+    <option name="WARNING_ATTRIBUTES"><value><option name="EFFECT_COLOR" value="F4C56A"/><option name="ERROR_STRIPE_COLOR" value="F4C56A"/><option name="EFFECT_TYPE" value="2"/></value></option>
+    <option name="SEARCH_RESULT_ATTRIBUTES"><value><option name="BACKGROUND" value="283E63"/><option name="EFFECT_COLOR" value="A8C7FF"/></value></option>
+    <option name="WRITE_SEARCH_RESULT_ATTRIBUTES"><value><option name="BACKGROUND" value="384A72"/></value></option>
+    <option name="CONSOLE_NORMAL_OUTPUT"><value><option name="FOREGROUND" value="F5F7FB"/></value></option>
+    <option name="CONSOLE_ERROR_OUTPUT"><value><option name="FOREGROUND" value="FF95A5"/></value></option>
+    <option name="CONSOLE_SYSTEM_OUTPUT"><value><option name="FOREGROUND" value="93A4BF"/></value></option>
+    <option name="HYPERLINK_ATTRIBUTES"><value><option name="FOREGROUND" value="A8C7FF"/><option name="EFFECT_COLOR" value="A8C7FF"/><option name="EFFECT_TYPE" value="1"/></value></option>
+  </attributes>
+</scheme>

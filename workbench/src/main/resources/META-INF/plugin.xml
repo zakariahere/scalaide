@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>dev.scalaide.workbench</id>
+    <name>Scala Workbench</name>
+    <vendor url="https://zakaria.lu">Zakaria Bouazza</vendor>
+    <description><![CDATA[
+      Scala-first project overview and build/test workflows on the real IntelliJ Platform.
+      Uses the Scala plugin for Scala language intelligence. Development milestone;
+      not a standalone IDE distribution.
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <depends>org.intellij.scala</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="dev.scalaide.zakaria.graphite" path="/themes/zakaria-graphite.theme.json"/>
+        <toolWindow id="Scala Workbench" anchor="right" icon="/icons/scalaWorkbench.svg"
+                    factoryClass="dev.scalaide.workbench.WorkbenchToolWindow"/>
+        <projectConfigurable id="dev.scalaide.settings" displayName="Scala Workbench"
+                             instance="dev.scalaide.workbench.WorkbenchConfigurable"/>
+        <notificationGroup id="Scala Workbench" displayType="BALLOON"/>
+    </extensions>
+    <actions>
+        <group id="ScalaWorkbench.Menu" text="Scala" popup="true">
+            <add-to-group group-id="MainMenu" anchor="before" relative-to-action="ToolsMenu"/>
+            <action id="ScalaWorkbench.Compile" class="dev.scalaide.workbench.BuildAction$Compile"
+                    text="Compile Scala Project" description="Compile with the selected Scala build tool"/>
+            <action id="ScalaWorkbench.Test" class="dev.scalaide.workbench.BuildAction$Test"
+                    text="Test Scala Project" description="Run the selected Scala build tool's tests"/>
+            <separator/>
+            <action id="ScalaWorkbench.Show" class="dev.scalaide.workbench.WorkbenchActions$Show"
+                    text="Scala Workbench" description="Open the Scala project overview"/>
+            <action id="ScalaWorkbench.Settings" class="dev.scalaide.workbench.WorkbenchActions$Settings"
+                    text="Scala Workbench Settings" description="Configure build tools for this project"/>
+            <action id="ScalaWorkbench.Terminal" class="dev.scalaide.workbench.WorkbenchActions$Terminal"
+                    text="Open Scala Project Terminal" description="Activate the native integrated terminal"/>
+            <separator/>
+            <action id="ScalaWorkbench.ApplyBrandTheme" class="dev.scalaide.workbench.ApplyBrandThemeAction"
+                    text="Apply Zakaria Graphite Theme" description="Use Zakaria's graphite, ice blue and electric blue IDE theme"/>
+        </group>
+    </actions>
+</idea-plugin>

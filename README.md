@@ -14,6 +14,13 @@ with graphite surfaces, ice/electric-blue accents, the original hoodie mascot,
 ZB monogram and bundled brand fonts. Apply it from the Workbench button or
 Find Action → **Apply Zakaria Graphite Theme**. [Branding details](docs/branding.md).
 
+**Scala Learning** explains the concepts in your active Scala file through
+DeepSeek. Open **Scala → Scala Learning**, add your key in **Learning settings…**,
+then click **Summarize this Scala file**. English summaries include useful Java
+comparisons, things to remember and a small exercise. Requests are explicit and
+use only the current file snapshot, including unsaved edits. Keys use IntelliJ
+Password Safe. [Setup and behavior](docs/scala-learning.md).
+
 ## Run on Windows
 
 Install a **JDK 25** and make `java` available on PATH (or set `JAVA_HOME`).
@@ -33,7 +40,8 @@ The launcher reuses a local IntelliJ IDEA **2026.2.1** installation when found,
 without modifying it. You can supply `-IdeHome` or `SCALAIDE_IDEA_HOME` explicitly.
 Otherwise Gradle downloads the pinned host. Initial downloads can be large.
 The Scala plugin **2026.2.18** is provisioned into the development instance.
-No API key, AI account or IntelliJ Ultimate feature is needed for this slice.
+No API key, AI account or IntelliJ Ultimate feature is needed for the editor and
+build workflows. The optional Scala Learning feature requires a DeepSeek key.
 The unified host may show optional paid features; it is not redistributed here.
 
 The Gradle entry point also works on other supported desktop operating systems,

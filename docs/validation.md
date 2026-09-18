@@ -60,6 +60,29 @@ fixtures, not inferred merely from a screenshot or an installed plugin.
 - The packaged PNG and original WebP decode to identical RGBA pixels, including
   transparency. Brand resources load locally.
 
+## Scala Learning — 2026-09-18
+
+- Verification passes with 37 tests: the previous 20 plus four prompt-policy,
+  eight real loopback HTTP, four IntelliJ learning integration tests and one
+  modal settings-save regression test.
+- Coverage includes unsaved document snapshots, source-size rejection, non-Scala
+  gating, request/schema boundaries, safe provider errors, partial/malformed/large
+  responses, timeouts, cancellation and escaped Markdown rendering.
+- Cancellation coverage found a race in HttpClient's derived future cancellation.
+  The client now owns its public future and explicitly propagates cancellation
+  to the transport. The regression test passes.
+- Desktop checks confirm the separate Learning panel opens, follows the active
+  filename, disables summarization for `build.sbt`, and reports a missing key.
+- A real DeepSeek explanation of the user's `Policy.scala` exercise was observed
+  in the running panel. It described the class and identified its unfinished
+  companion method; this confirms the live request/display path, not universal
+  correctness of generated explanations.
+- The settings regression reproduces a save completion deferred by IntelliJ's
+  modal event queue. Capturing the dialog's modality before background work lets
+  the completion close the dialog while it is still modal. The test failed before
+  this change and passes after it, without accessing stored credentials.
+- Compilation, plugin packaging and the existing configuration checks pass.
+
 ## Limits and observations
 
 - No standalone source-built distribution, signed installer or SDK isolation

@@ -12,3 +12,8 @@ local.properties
 **/.scala-build/
 examples/hello-scala/null/
 outputs/
+.env
+.env.*
+!.env.example
+*.kdbx
+*.kdb

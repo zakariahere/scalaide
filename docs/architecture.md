@@ -56,8 +56,12 @@ to pretending that class-loader separation is a sandbox.
 Scala PSI/compiler services own editor truth. An eventual semantic gateway must
 return provenance and document versions, declare unavailable information, and
 wait for index readiness outside the UI thread. Refactoring edits must use native
-preview/undo transactions and reject stale snapshots. There is no AI network
-client, key setup, agent execution or source upload in the current implementation.
+preview/undo transactions and reject stale snapshots. The optional Scala Learning
+feature is a separate explicit file-summary request, not an agent or semantic
+gateway. It sends a bounded snapshot of the active file to DeepSeek, uses Password
+Safe for the key, and renders inert learning notes. It does not execute code, edit
+source, search the project or replace compiler information. See
+[Scala Learning](scala-learning.md) for its request boundary.
 
 ## Operations
 

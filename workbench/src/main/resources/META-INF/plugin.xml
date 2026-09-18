@@ -15,6 +15,8 @@
         <themeProvider id="dev.scalaide.zakaria.graphite" path="/themes/zakaria-graphite.theme.json"/>
         <toolWindow id="Scala Workbench" anchor="right" icon="/icons/scalaWorkbench.svg"
                     factoryClass="dev.scalaide.workbench.WorkbenchToolWindow"/>
+        <toolWindow id="Scala Learning" anchor="right" icon="/icons/scalaLearning.svg"
+                    factoryClass="dev.scalaide.workbench.LearningToolWindow"/>
         <projectConfigurable id="dev.scalaide.settings" displayName="Scala Workbench"
                              instance="dev.scalaide.workbench.WorkbenchConfigurable"/>
         <notificationGroup id="Scala Workbench" displayType="BALLOON"/>
@@ -22,6 +24,13 @@
     <actions>
         <group id="ScalaWorkbench.Menu" text="Scala" popup="true">
             <add-to-group group-id="MainMenu" anchor="before" relative-to-action="ToolsMenu"/>
+            <action id="ScalaLearning.Show" class="dev.scalaide.workbench.LearningActions$Show"
+                    text="Scala Learning" description="Open your Scala learning companion"/>
+            <action id="ScalaLearning.Summarize" class="dev.scalaide.workbench.LearningActions$Summarize"
+                    text="Summarize This Scala File" description="Send the active Scala file to DeepSeek for a learning summary">
+                <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            </action>
+            <separator/>
             <action id="ScalaWorkbench.Compile" class="dev.scalaide.workbench.BuildAction$Compile"
                     text="Compile Scala Project" description="Compile with the selected Scala build tool"/>
             <action id="ScalaWorkbench.Test" class="dev.scalaide.workbench.BuildAction$Test"
